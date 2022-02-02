@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e6e6e6;
+}
+
+.container {
+    position: relative;
+    height: 80px;
+    line-height: 80px;
+    width: 500px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.container ol {
+    display: flex;
+    list-style: none;
+}
+
+.container ol li {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+}
+
+.container ol li i {
+    color: #323232;
+}
+
+.container ol li:hover i {
+    color: #007eff;
+}
+
+.container .slider {
+    position: absolute;
+    height: 7px;
+    width: 20%;
+    background: #007eff;
+    bottom: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.container ol li:nth-child(2):hover~.slider {
+    margin-left: 20%;
+}
+
+.container ol li:nth-child(3):hover~.slider {
+    margin-left: 40%;
+}
+
+.container ol li:nth-child(4):hover~.slider {
+    margin-left: 60%;
+}
+
+.container ol li:nth-child(5):hover~.slider {
+    margin-left: 80%;
+}
+
+.container ol li .fa-camera {
+    color: #007eff;
+}
